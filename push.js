@@ -1,3 +1,6 @@
+const btn = document.querySelector("#btn");
+btn.addEventListener("click", notification);
+
 function notification() {
   switch (Notification.permission) {
     case "default":
