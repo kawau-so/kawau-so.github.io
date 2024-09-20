@@ -2,7 +2,7 @@ const btn = document.querySelector("#btn");
 btn.addEventListener("click", notification);
 
 let i = 0;
-while (i < 5) {
+while (i < 100) {
   function notification() {
   switch (Notification.permission) {
     case "default":
@@ -31,7 +31,7 @@ do {
       alert("通知が拒否されています");
       break;(`iの値は ${i}`);
   i++;
-} while (i < 5);
+} while (i < 100);
 
 /* while do...while共通
 iの値は 0
